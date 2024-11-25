@@ -26,3 +26,7 @@ Avant de lancer le projet, assurez-vous d'avoir installé les éléments suivant
 2. **GTK+ 3** : Nécessaire pour l'interface graphique côté client. Installez-le sur votre système :  
    ```bash
    sudo apt-get install libgtk-3-dev
+3. gcc client_gui.c -o client_gui pkg-config --cflags --libs gtk+-3.0 -lpthread
+4. make Makefile compile
+5. ./server 2222
+6. ./client_gui 2222
